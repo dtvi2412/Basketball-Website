@@ -1,0 +1,86 @@
+
+.header{
+    padding:40px;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 99;
+
+    background-color: transparent;
+    transition:  all .3s;
+}
+.headerScroll{
+    padding:40px;
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 99;
+
+    background-color: #151515;
+    box-shadow: 1px 1px 12px #fff;
+    transition:  all .3s;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:#fff;
+
+    font-family: fontSecondBasket;
+   
+}
+.header__logo img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.header__brandName{
+    font-size:2.5rem;
+    cursor: pointer;
+    position: relative;
+}
+.header__brandName::after{
+    content: 'TEAM';
+    width:40px;
+    height: 40px;
+ 
+    position:absolute;
+
+    left:40%;
+    transform: translateX(-40%);
+    bottom: -50px;
+    font-size:1rem;
+    color:#00bfc7;
+}
+@media only screen and (max-width:650px){
+    .header__brandName{
+        font-size:2.1rem;
+    }
+}
+@media only screen and (max-width:420px){
+    .header__brandName{
+        font-size:1.7rem;
+    }
+}
+@media only screen and (max-width:340px){
+    .header__brandName{
+        font-size:1.5rem;
+    }
+    .header__logo img{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media only screen and (max-width:290px){
+    .header__brandName{
+        font-size:1.3rem;
+    }
+    .header__logo img{
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,61 @@
+.cardSkill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 30px 0;
+    margin: 0 5px;
+    transform: scale(0.9);
+    transition: all .4s;
+}
+
+.cardSkill:hover {
+    transform: scale(1);
+}
+
+.cardSkill__name {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.cardSkill__image {
+    width: 200px;
+    height: 250px;
+}
+.cardSkill__image::after{
+    content: 'PLAY';
+    color:#fff;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-100%,-50%);
+    transition: all .4s;
+
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 100%;
+    border-top:2px solid #00354e;
+    border-left:2px solid #00354e;
+    box-shadow: 2px 2px 4px #560c0c;
+    
+
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+.cardSkill__image:hover::after{
+    opacity: 1;
+   visibility: visible;
+   transform:translate(-50%,-50%);
+} 
+.cardSkill__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
