@@ -1,6 +1,6 @@
 
 .header{
-    padding:40px;
+    padding:30px;
     position: fixed;
     top:0;
     left:0;
@@ -11,14 +11,14 @@
     transition:  all .3s;
 }
 .headerScroll{
-    padding:40px;
+    padding:30px;
     position: fixed;
     top:0;
     left:0;
     right: 0;
     z-index: 99;
 
-    background-color: #151515;
+    background-color: rgba(0,0,0,0.8);
     box-shadow: 1px 1px 12px #fff;
     transition:  all .3s;
 }
@@ -56,17 +56,36 @@
     font-size:1rem;
     color:#00bfc7;
 }
+@media only screen and (max-width:1265px){
+    .header{
+        padding:20px;
+    }
+    .headerScroll{
+        padding: 20px;
+    }
+}
 @media only screen and (max-width:650px){
     .header__brandName{
         font-size:2.1rem;
     }
+    .header__logo img{
+        width: 60px;
+        height: 60px;
+    }
 }
 @media only screen and (max-width:420px){
+    .header{
+        position: absolute;
+    }
+    .headerScroll{
+        position: absolute;
+    }
     .header__brandName{
         font-size:1.7rem;
     }
 }
 @media only screen and (max-width:340px){
+   
     .header__brandName{
         font-size:1.5rem;
     }

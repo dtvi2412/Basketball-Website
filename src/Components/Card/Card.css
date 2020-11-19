@@ -4,8 +4,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
     padding: 40px 0;
-    margin: 0 5px;
+    margin: 20px 5px;
+
     transform: scale(0.9);
     transition: all .4s;
 }
@@ -48,6 +50,9 @@
     font-size: 1rem;
     color: #fff;
     margin-top: 15px;
+    text-align: center;
+
+   
 }
 
 .card__image {
@@ -61,10 +66,21 @@
     object-fit: contain;
     background-color: #111;
 }
-
+@media only screen and (max-width:420px){
+    .card{
+        padding:20px 0;
+    }
+    .card__name{
+        font-size:0.8rem;
+    }
+    .card__image {
+        width: 120px;
+        height: 150px;
+    }
+}
 @media only screen and (max-width:360px) {
     .card {
-        min-width: 220px;
+        /* min-width: 220px; */
     }
     .card__name {
         font-size: 0.8rem;

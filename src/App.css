@@ -7,9 +7,25 @@
     font-family: fontSecondBasket;
     src: url(./Assets/Fonts/LmsSwoosh-KW9A.ttf);
 }
+@font-face{
+    font-family: fontThirstBasket;
+    src: url(./Assets/Fonts/Painter-LxXg.ttf);
+}
 
 .App {
     background-color: #101010;
     font-family: fontBasket;
     min-width: 280px;
+}
+.backToTop{
+    width:40px;
+    height: 40px;
+
+    background-color: red;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    text-align: center;
+    cursor: pointer;
 }

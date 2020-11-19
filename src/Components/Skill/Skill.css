@@ -6,7 +6,8 @@
 .skill__title {
     color: #9a0b00;
     font-size: 2rem;
-    margin: 10px 0;
+    margin: 10px 0;    
+    
 }
 
 .skill__wrap {
@@ -22,5 +23,16 @@
     }
     .skill__wrap::-webkit-scrollbar{
         display: none;
+    }
+}
+@media only screen and (max-width:760px){
+    .skill__title{
+        font-size:1.8rem;
+    }
+}
+@media only screen and (max-width:420px){
+    .skill__title{
+        font-size:1.5rem;
+        text-align: center;
     }
 }

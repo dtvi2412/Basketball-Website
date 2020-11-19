@@ -4,8 +4,8 @@ import database from '../../configFirebase';
 import Card from '../Card/Card';
 import './ListBasketball.css';
 import YouTube from 'react-youtube';
-import Loading from "../Loading/Loading";
-import movieTrailer from 'movie-trailer';
+import Loading from '../Loading/Loading';
+
 function ListBasketball() {
   //Get courses in Redux
   const courses = useSelector((courses) => courses.couresReducer.courses);
@@ -62,11 +62,11 @@ function ListBasketball() {
   return (
     <div>
       {courses === [] ? (
-        <Loading/>
+        <Loading />
       ) : (
         <>
           <div className="listVideo">
-            <h1 style={{ color: '#9a0b00' }}>Star</h1>
+            <h1 className="listVideo__title">Stars</h1>
             <div className="listVideo__wrap"> {renderListBasket()}</div>
           </div>
           <div className="listVideo__youtube">

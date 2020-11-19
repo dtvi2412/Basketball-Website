@@ -12,6 +12,10 @@
     flex-wrap: wrap;
     /* overflow-x: scroll; */
 }
+.listVideo__title{
+    font-size:2rem;
+    color:#9a0b00;
+}
 
 @media only screen and (max-width:1000px){
     .listVideo__wrap{
@@ -22,5 +26,16 @@
     }
     .listVideo__wrap::-webkit-scrollbar{
         display: none;
+    }
+}
+@media only screen and (max-width:760px){
+    .listVideo__title{
+        font-size:1.8rem;
+    }
+}
+@media only screen and (max-width:420px){
+    .listVideo__title{
+        font-size:1.5rem;
+        text-align: center;
     }
 }
